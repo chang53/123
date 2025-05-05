@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>你畫我猜遊戲</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- GUN.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/gun/gun.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gun/sea.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h1>你畫我猜遊戲</h1>
+        <div id="game-container">
+            <div id="player-info">
+                <input type="text" id="player-name" placeholder="輸入你的名字">
+                <button id="join-game">加入遊戲</button>
+                <div id="current-role"></div>
+            </div>
+            
+            <div id="game-area">
+                <canvas id="drawing-board"></canvas>
+                <div id="tools" class="hidden">
+                    <button id="clear-canvas">清除畫布</button>
+                    <input type="color" id="color-picker" value="#000000">
+                    <input type="range" id="brush-size" min="1" max="20" value="5">
+                </div>
+            </div>
+
+            <div id="chat-area">
+                <div id="messages"></div>
+                <div id="input-area">
+                    <input type="text" id="message-input" placeholder="輸入你的猜測...">
+                    <button id="send-message">送出</button>
+                </div>
+            </div>
+
+            <div id="game-status">
+                <div id="word-display"></div>
+                <div id="timer"></div>
+                <div id="players-list"></div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
