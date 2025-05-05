@@ -22,12 +22,16 @@
             <div id="game-area">
                 <canvas id="drawing-board"></canvas>
                 <div id="tools" class="hidden">
-                    <button id="clear-canvas">清除畫布</button>
-                    <input type="color" id="color-picker" value="#000000">
-                    <input type="range" id="brush-size" min="1" max="20" value="5">
-                    <div id="custom-word-input">
-                        <input type="text" id="custom-word" placeholder="輸入自訂題目">
-                        <button id="submit-word">出題</button>
+                    <div id="drawer-controls">
+                        <div id="word-input-area">
+                            <input type="text" id="custom-word" placeholder="輸入你要畫的題目">
+                            <button id="submit-word">開始遊戲</button>
+                        </div>
+                        <div id="drawing-tools">
+                            <button id="clear-canvas">清除畫布</button>
+                            <input type="color" id="color-picker" value="#000000">
+                            <input type="range" id="brush-size" min="1" max="20" value="5">
+                        </div>
                     </div>
                 </div>
             </div>

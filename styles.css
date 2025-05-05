@@ -158,3 +158,26 @@ button:hover {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
+
+#drawer-controls {
+    width: 100%;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+#word-input-area {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #e9ecef;
+    border-radius: 4px;
+}
+
+#drawing-tools {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
